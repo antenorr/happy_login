@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #464646;
+    background-image: url(../images/anna-demianenko-resisized.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+.loginBox {
+    /*properly place div dead center*/
+  background: rgba(0, 0, 0, .5);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 420px;
+  padding: 80px 40px;
+ 
+}
+.user {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    /*formula to calculate placeing in center postiion*/
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    width: 100px;
+}
+h2 {
+    color: #efed40;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+.loginBox p {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+}
+.loginBox input {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.loginBox input[type = "text"],
+.loginBox input[type = "password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    height: 40px;
+    outline: none;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+.loginBox input[type = "text"]:focus,
+.loginBox input[type = "password"]:focus {
+    border-bottom: 1px solid #FF7633;
+}
+
+.loginBox input[type="submit"] {
+    background: #FF7633;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    height: 40px;
+    outline: none;
+}
+.loginBox input[type="submit"]:hover {
+    background-color: #efed40;
+    color: #262626;
+}
+.loginBox a {
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.loginBox a:hover {
+    color: #FF7633;
+}
+/*
+Media query for responsiveness*/
+
+
+@media only screen and (max-width: 767px) {
+    body {
+         background-image: url(../images/anna-demianenko-for-mobile.jpg);
+    }
+}
+@media only screen and (max-width: 400px) {
+    .loginBox {
+        width: 300px;
+        height: 440px;
+    }
+}
+
